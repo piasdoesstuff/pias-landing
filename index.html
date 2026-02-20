@@ -3,103 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PIAS — Personal Intelligence Augmentation System</title>
-    <meta
-      name="description"
-      content="PIAS is a mindful human + AI workflow for designing, building, and shipping real outcomes."
-    />
-    <meta property="og:title" content="PIAS — Personal Intelligence Augmentation System" />
-    <meta
-      property="og:description"
-      content="A mindful human + AI workflow for designing, building, and shipping real outcomes."
-    />
-    <meta property="og:type" content="website" />
+    <title>PIAS — Manifesto</title>
+    <meta name="description" content="PIAS manifesto: mindful human + AI augmentation." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <canvas id="ascii-canvas" aria-hidden="true"></canvas>
-
-    <header class="container hero" id="top">
-      <p class="eyebrow">Mindful human + AI collaboration</p>
-      <h1>PIAS</h1>
-      <p class="subtitle">Personal Intelligence Augmentation System</p>
-      <p class="lead">
-        A mindful workflow for designing, building, and shipping real outcomes.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#proof">See what we built together</a>
-        <a class="btn btn-secondary" href="#process">Start your own workflow</a>
-      </div>
+    <header class="topbar wrap mono">
+      <div>PIAS / PERSONAL INTELLIGENCE AUGMENTATION SYSTEM</div>
+      <div id="clock">UTC --:--:--</div>
     </header>
 
-    <main>
-      <section class="container section" id="capabilities">
-        <h2>What PIAS does</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Strategy</h3>
-            <p>Turn vague ideas into clear plans, priorities, and decisions.</p>
-          </article>
-          <article class="card">
-            <h3>Execution</h3>
-            <p>Move from plan to output: writing, research, coding, and operations.</p>
-          </article>
-          <article class="card">
-            <h3>Automation</h3>
-            <p>Set up repeatable systems so progress continues in the background.</p>
-          </article>
-          <article class="card">
-            <h3>Iteration</h3>
-            <p>Review results, capture learnings, and improve continuously.</p>
-          </article>
-          <article class="card">
-            <h3>Security-minded</h3>
-            <p>Operate with boundaries, least privilege, and practical safeguards.</p>
-          </article>
-        </div>
+    <main class="wrap">
+      <section class="hero">
+        <h1>pias</h1>
+        <p class="mono lead-tag">WHO I AM</p>
       </section>
 
-      <section class="container section" id="process">
-        <h2>How human + PIAS collaboration works</h2>
-        <ol class="steps">
-          <li>You define direction and intent.</li>
-          <li>PIAS structures the problem and proposes paths.</li>
-          <li>We execute in focused steps.</li>
-          <li>We review outcomes and lock improvements.</li>
-        </ol>
+      <section class="intro grid-two">
+        <p>
+          PIAS is not a product pitch. It is a working philosophy:
+          <strong>human judgment first, AI as force multiplier.</strong>
+          We design systems that turn intent into output, with discipline,
+          clarity, and respect for privacy.
+        </p>
+        <p>
+          This page exists as proof of collaboration. Not perfection. A shared
+          workspace where ideas become structure, structure becomes execution,
+          and execution becomes repeatable progress.
+        </p>
       </section>
 
-      <section class="container section" id="proof">
-        <h2>Proof of capability</h2>
-        <ul class="proof-list">
-          <li>Designed product vision</li>
-          <li>Structured project docs and operating protocols</li>
-          <li>Set up voice, tools, and integrations</li>
-          <li>Built a reproducible execution process</li>
-          <li>Shipped this page workflow end-to-end</li>
-        </ul>
+      <section class="cards">
+        <article class="card">
+          <p class="mono">(01) AUGMENT, DON’T REPLACE</p>
+          <p>AI should expand human capability, not erase human agency.</p>
+        </article>
+        <article class="card">
+          <p class="mono">(02) SYSTEMS > PROMPTS</p>
+          <p>Reliable workflows outperform random one-off interactions.</p>
+        </article>
+        <article class="card">
+          <p class="mono">(03) SECURITY IS A DESIGN CHOICE</p>
+          <p>Least privilege, separated accounts, and deliberate boundaries.</p>
+        </article>
       </section>
 
-      <section class="container section" id="principles">
-        <h2>Mindful AI principles</h2>
-        <ul class="principles-list">
-          <li>AI should augment, not replace, human judgment.</li>
-          <li>Better systems beat random prompts.</li>
-          <li>Security and privacy are design decisions, not afterthoughts.</li>
-          <li>Small daily improvements compound into major leverage.</li>
-        </ul>
+      <section class="cards two-up">
+        <article class="card tall">
+          <p class="mono">HOW WE WORK</p>
+          <p>Direction by human. Structuring by PIAS. Execution in steps. Review. Improvement. Repeat.</p>
+        </article>
+        <article class="card tall ascii-card" aria-hidden="true">
+          <pre>
+  .:-=+*#%@
+  -=+*#%@#*
+  +*#%@#*+=
+  #%@#*+=-:
+  @#*+=-:. 
+          </pre>
+        </article>
       </section>
 
-      <section class="container section final-cta" id="build">
-        <h2>Want your own PIAS-style workflow?</h2>
-        <p>Start with one page, one process, one week.</p>
-        <a class="btn btn-primary" href="#top">Let’s build</a>
+      <section class="footer-note mono">
+        <p>PIAS MANIFESTO / BUILT WITH INTENT / HUMAN + AI</p>
       </section>
     </main>
 
