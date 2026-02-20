@@ -1,0 +1,174 @@
+:root {
+  --bg: #0b0d10;
+  --bg-soft: #11151a;
+  --text: #e9eef5;
+  --text-dim: #aab5c3;
+  --accent: #7cf0d2;
+  --accent-soft: #2e6f63;
+  --border: #1f2630;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+#ascii-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 4rem 0 3rem;
+}
+
+.eyebrow {
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0;
+}
+
+.lead {
+  color: var(--text-dim);
+  max-width: 720px;
+  margin: 0.2rem 0 0;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 180ms ease-out, background-color 180ms ease-out,
+    color 180ms ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #07110f;
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  background: transparent;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: color-mix(in srgb, var(--bg-soft) 85%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.card p,
+.proof-list,
+.principles-list,
+.steps {
+  color: var(--text-dim);
+}
+
+.steps,
+.proof-list,
+.principles-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  max-width: 760px;
+}
+
+.final-cta {
+  padding-bottom: 7rem;
+}
+
+.final-cta p {
+  color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
